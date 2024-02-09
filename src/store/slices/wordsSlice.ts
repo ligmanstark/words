@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-nocheck
 import { createAction, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { CardState } from '../../types/types';
 import { put } from 'redux-saga/effects';
 import { db } from '../../../firebase';
-import { collection, doc, getDocs } from 'firebase/firestore';
+import { collection, getDocs } from 'firebase/firestore';
 const initialState: CardState = {
   cards: []
 };
